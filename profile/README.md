@@ -1,11 +1,25 @@
 # prsm
 
-Small, focused packages for Node.js. Each one does one thing well.
+Small, focused packages for Node.js. Each one does one thing well. Distributed by default - backed by Redis or Postgres with leader election, clustering, and shared state built in from the start. All ESM, zero or minimal dependencies, published under the `@prsm` scope on npm.
 
-Distributed by default. Packages that coordinate across processes or machines do so natively - backed by Redis or Postgres, with leader election, clustering, and shared state built in from the start. Not bolted on after.
+## Packages
 
-Realtime by default. State changes propagate. Subscriptions are first-class. Systems observe and react rather than poll and retry.
+| Package | Test | Version | Description |
+|---------|------|---------|-------------|
+| [`@prsm/ms`](https://github.com/prsmjs/ms) | [![test](https://github.com/prsmjs/ms/actions/workflows/test.yml/badge.svg)](https://github.com/prsmjs/ms/actions/workflows/test.yml) | [![npm](https://img.shields.io/npm/v/@prsm/ms)](https://www.npmjs.com/package/@prsm/ms) | Parse and convert time strings to milliseconds |
+| [`@prsm/ids`](https://github.com/prsmjs/ids) | [![test](https://github.com/prsmjs/ids/actions/workflows/test.yml/badge.svg)](https://github.com/prsmjs/ids/actions/workflows/test.yml) | [![npm](https://img.shields.io/npm/v/@prsm/ids)](https://www.npmjs.com/package/@prsm/ids) | Short, obfuscated, collision-proof, reversible identifiers |
+| [`@prsm/hash`](https://github.com/prsmjs/hash) | [![test](https://github.com/prsmjs/hash/actions/workflows/test.yml/badge.svg)](https://github.com/prsmjs/hash/actions/workflows/test.yml) | [![npm](https://img.shields.io/npm/v/@prsm/hash)](https://www.npmjs.com/package/@prsm/hash) | Simple salted string hashing on top of node:crypto |
+| [`@prsm/from`](https://github.com/prsmjs/from) | [![test](https://github.com/prsmjs/from/actions/workflows/test.yml/badge.svg)](https://github.com/prsmjs/from/actions/workflows/test.yml) | [![npm](https://img.shields.io/npm/v/@prsm/from)](https://www.npmjs.com/package/@prsm/from) | Fluent query builder for filtering, transforming, and aggregating arrays of objects |
+| [`@prsm/fsm`](https://github.com/prsmjs/fsm) | [![test](https://github.com/prsmjs/fsm/actions/workflows/test.yml/badge.svg)](https://github.com/prsmjs/fsm/actions/workflows/test.yml) | [![npm](https://img.shields.io/npm/v/@prsm/fsm)](https://www.npmjs.com/package/@prsm/fsm) | Non-deterministic finite state machine with time-based ticks, persistence, and multiple active states |
+| [`@prsm/lock`](https://github.com/prsmjs/lock) | [![test](https://github.com/prsmjs/lock/actions/workflows/test.yml/badge.svg)](https://github.com/prsmjs/lock/actions/workflows/test.yml) | [![npm](https://img.shields.io/npm/v/@prsm/lock)](https://www.npmjs.com/package/@prsm/lock) | Distributed locking primitives for Redis - mutex and semaphore |
+| [`@prsm/limit`](https://github.com/prsmjs/limit) | [![test](https://github.com/prsmjs/limit/actions/workflows/test.yml/badge.svg)](https://github.com/prsmjs/limit/actions/workflows/test.yml) | [![npm](https://img.shields.io/npm/v/@prsm/limit)](https://www.npmjs.com/package/@prsm/limit) | Redis-backed distributed rate limiting with token bucket, sliding window, and leaky bucket algorithms |
+| [`@prsm/cron`](https://github.com/prsmjs/cron) | [![test](https://github.com/prsmjs/cron/actions/workflows/test.yml/badge.svg)](https://github.com/prsmjs/cron/actions/workflows/test.yml) | [![npm](https://img.shields.io/npm/v/@prsm/cron)](https://www.npmjs.com/package/@prsm/cron) | Redis-backed distributed cron scheduler with leader election and cron expression support |
+| [`@prsm/queue`](https://github.com/prsmjs/queue) | [![test](https://github.com/prsmjs/queue/actions/workflows/test.yml/badge.svg)](https://github.com/prsmjs/queue/actions/workflows/test.yml) | [![npm](https://img.shields.io/npm/v/@prsm/queue)](https://www.npmjs.com/package/@prsm/queue) | Redis-backed distributed task queue with grouped concurrency, retries, and rate limiting |
+| [`@prsm/cells`](https://github.com/prsmjs/cells) | [![test](https://github.com/prsmjs/cells/actions/workflows/test.yml/badge.svg)](https://github.com/prsmjs/cells/actions/workflows/test.yml) | [![npm](https://img.shields.io/npm/v/@prsm/cells)](https://www.npmjs.com/package/@prsm/cells) | Reactive computation graph with distributed coordination via Redis |
+| [`@prsm/workflow`](https://github.com/prsmjs/workflow) | [![test](https://github.com/prsmjs/workflow/actions/workflows/test.yml/badge.svg)](https://github.com/prsmjs/workflow/actions/workflows/test.yml) | [![npm](https://img.shields.io/npm/v/@prsm/workflow)](https://www.npmjs.com/package/@prsm/workflow) | Durable, inspectable workflow engine |
+| [`@prsm/realtime`](https://github.com/prsmjs/realtime) | [![test](https://github.com/prsmjs/realtime/actions/workflows/test.yml/badge.svg)](https://github.com/prsmjs/realtime/actions/workflows/test.yml) | [![npm](https://img.shields.io/npm/v/@prsm/realtime)](https://www.npmjs.com/package/@prsm/realtime) | Distributed WebSocket framework with Redis-backed rooms, records, presence, channels, collections, and persistence |
+| [`@prsm/devtools`](https://github.com/prsmjs/devtools) | [![test](https://github.com/prsmjs/devtools/actions/workflows/test.yml/badge.svg)](https://github.com/prsmjs/devtools/actions/workflows/test.yml) | [![npm](https://img.shields.io/npm/v/@prsm/devtools)](https://www.npmjs.com/package/@prsm/devtools) | Read-only Express middleware dashboard for observing @prsm infrastructure at runtime |
 
-All ESM. Zero or minimal dependencies. Designed to compose together but never forced to - pick what you need, ignore the rest.
+---
 
-Everything is published under the `@prsm` scope on npm.
+This ecosystem is an experiment in AI-maintained open source. All packages are autonomously built, tested, and refined by AI with human oversight. Regular audits, thorough test coverage, continuous refinement - the emphasis is on high quality, rigorously tested, production-grade code.
