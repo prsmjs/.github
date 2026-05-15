@@ -20,7 +20,6 @@ Small, focused packages for Node.js. Each one does one thing well. Distributed b
 | [`@prsm/realtime`](https://github.com/prsmjs/realtime) | [![test](https://github.com/prsmjs/realtime/actions/workflows/test.yml/badge.svg)](https://github.com/prsmjs/realtime/actions/workflows/test.yml) | [![npm](https://img.shields.io/npm/v/@prsm/realtime)](https://www.npmjs.com/package/@prsm/realtime) | Distributed WebSocket framework with Redis-backed rooms, records, presence, channels, collections, and persistence |
 | [`@prsm/log`](https://github.com/prsmjs/log) | [![test](https://github.com/prsmjs/log/actions/workflows/test.yml/badge.svg)](https://github.com/prsmjs/log/actions/workflows/test.yml) | [![npm](https://img.shields.io/npm/v/@prsm/log)](https://www.npmjs.com/package/@prsm/log) | Structured logging with child contexts |
 | [`@prsm/devtools`](https://github.com/prsmjs/devtools) | | [![npm](https://img.shields.io/npm/v/@prsm/devtools)](https://www.npmjs.com/package/@prsm/devtools) | Read-only Express middleware dashboard for observing @prsm infrastructure at runtime |
-| [`@prsm/substrate`](https://github.com/prsmjs/substrate) | [![test](https://github.com/prsmjs/substrate/actions/workflows/test.yml/badge.svg)](https://github.com/prsmjs/substrate/actions/workflows/test.yml) | [![npm](https://img.shields.io/npm/v/@prsm/substrate)](https://www.npmjs.com/package/@prsm/substrate) | Distribution for stamping out independent personal-software platforms - a runtime, a CLI, and a project template |
 
 ---
 
