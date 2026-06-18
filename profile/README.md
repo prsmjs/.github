@@ -1,6 +1,6 @@
 # prsm
 
-Small, focused packages for Node.js. Each one does one thing well. Distributed by default - backed by Redis or Postgres with leader election, clustering, and shared state built in from the start. All ESM, zero or minimal dependencies, published under the `@prsm` scope on npm.
+Small, focused packages for Node.js. Each one does one thing well. Many are distributed, backed by Redis or Postgres with leader election, clustering, and shared state built in. All ESM, zero or minimal dependencies, published under the `@prsm` scope on npm.
 
 ## Packages
 
@@ -24,6 +24,9 @@ Small, focused packages for Node.js. Each one does one thing well. Distributed b
 | [`@prsm/realtime`](https://github.com/prsmjs/realtime) | [![test](https://github.com/prsmjs/realtime/actions/workflows/test.yml/badge.svg)](https://github.com/prsmjs/realtime/actions/workflows/test.yml) | [![npm](https://img.shields.io/npm/v/@prsm/realtime)](https://www.npmjs.com/package/@prsm/realtime) | Distributed WebSocket framework with Redis-backed rooms, records, presence, channels, collections, and persistence |
 | [`@prsm/log`](https://github.com/prsmjs/log) | [![test](https://github.com/prsmjs/log/actions/workflows/test.yml/badge.svg)](https://github.com/prsmjs/log/actions/workflows/test.yml) | [![npm](https://img.shields.io/npm/v/@prsm/log)](https://www.npmjs.com/package/@prsm/log) | Structured logging with child contexts |
 | [`@prsm/devtools`](https://github.com/prsmjs/devtools) | | [![npm](https://img.shields.io/npm/v/@prsm/devtools)](https://www.npmjs.com/package/@prsm/devtools) | Read-only Express middleware dashboard for observing @prsm infrastructure at runtime |
+| [`@prsm/ai`](https://github.com/prsmjs/ai) | [![test](https://github.com/prsmjs/ai/actions/workflows/test.yml/badge.svg)](https://github.com/prsmjs/ai/actions/workflows/test.yml) | [![npm](https://img.shields.io/npm/v/@prsm/ai)](https://www.npmjs.com/package/@prsm/ai) | Composable LLM inference with multi-provider support, tool execution, streaming, structured output, and approval workflows |
+| [`@prsm/embed`](https://github.com/prsmjs/embed) | [![test](https://github.com/prsmjs/embed/actions/workflows/test.yml/badge.svg)](https://github.com/prsmjs/embed/actions/workflows/test.yml) | [![npm](https://img.shields.io/npm/v/@prsm/embed)](https://www.npmjs.com/package/@prsm/embed) | Text embeddings with multi-provider support, batching, and cosine similarity |
+| [`@prsm/image`](https://github.com/prsmjs/image) | [![test](https://github.com/prsmjs/image/actions/workflows/test.yml/badge.svg)](https://github.com/prsmjs/image/actions/workflows/test.yml) | [![npm](https://img.shields.io/npm/v/@prsm/image)](https://www.npmjs.com/package/@prsm/image) | Image generation across OpenAI, xAI, and Google with normalized options and raw provider passthrough |
 
 ---
 
